@@ -5,10 +5,22 @@
     <link rel="icon" type="image/jpg" href="/quiz-app/assets/download-kzqTF8J3.jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz-Game</title>
-    <script type="module" crossorigin src="/quiz-app/assets/index-B4Vjf4yH.js"></script>
+    <script type="module" crossorigin src="/quiz-app/assets/index-C-ryXkg-.js"></script>
     <link rel="stylesheet" crossorigin href="/quiz-app/assets/index-Dj_xLlFY.css">
   </head>
   <body>
     <div id="root"></div>
+    <script type="text/javascript">
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location))
+    </script>
   </body>
 </html>
